@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Security App</string>
+    <string name="action_settings">Configuration Menu</string>
+
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_config">Config</string>
+    <string name="title_activity_new_user">NewUser</string>
+    <string name="title_activity_show_video">ShowVideo</string>
+    <string name="title_activity_app_menu">AppMenu</string>
+    <string name="title_activity_config_menu">ConfigMenu</string>
+
+    <!-- Config menu -->
+    <string name="config">Configuration Menu</string>
+    <string name="fName">First Name:</string>
+    <string name="lName">Last Name:</string>
+    <string name="add_button">Add/Edit Device</string>
+    <string name="forward_to_app">Main Menu</string>
+    <string name="devices">Devices</string>
+    <string name="error_fName">Error: First name required</string>
+    <string name="error_lName">Error: Last name required</string>
+    <string name="error_no_name">Error: First and last names are required</string>
+    <!--            -->
+    
+    <!-- New Device -->
+    <string name="new_device">Device #</string>
+    <string name="dev_name">Device Name</string>
+    <string name="dev_id">Device ID</string>
+    <string name="dev_ip">Device IP</string>
+    <string name="cancel">Cancel</string>
+    <string name="dev_type">Device Type</string>
+    <string name="error">Error: All fields required</string>
+    <string name="error_ip">Error: Invalid IP address</string>
+    <string name="error_conn">Error: Could not connect to the device</string>
+    <string-array name="types">
+        <item>Please select the device type:</item>
+        <item>Camera</item>
+    </string-array>
+    <!--            -->
+
+    <!-- PopupMenu -->
+    <string name="menu_view">View/Status</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_remove">Remove</string>
+    <!--           -->
+
+    <!-- Main Menu (AppMenu) -->
+    <string name="menu">Main Menu</string>
+    <!--                    -->
+
+    <!-- ShowVideo -->
+    <string name="no_conn">Error: Could not connect to device</string>
+    <string name="yes_conn">Video of device streaming</string>
+
+    <!-- Utils  -->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- end utils -->
+</resources>
