@@ -1,5 +1,6 @@
 # AndroidApp
 An app designed within an Andriod course. A prototype home security system
+
 Description:				The app developed is a basic prototype for a home security system.
 					The app interfaces with a camera via a basic protocol using sockets
 					over TCP/IP, and displays this information within an ImageView
@@ -16,10 +17,12 @@ Description:				The app developed is a basic prototype for a home security syste
 										the phrase connection_established
 									- init connects to a socket on port 27014, returning
 													device data in the 640*480*3 format explained above
+													
 					Lastly, explicit bindings for both the device's connections and the app's connections
 					must be input to ensure they communicate properly. The app's bindings are located
 					within the ConnectionManager object, and the device's are within the bind method of
 					the included code.
+					
 Third party libraries:		The prototype device uses OpenCV for image processing, and is included
 					for completeness; however, any device conforming to the above protocol 
 					should be sufficient.
