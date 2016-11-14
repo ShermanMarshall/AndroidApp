@@ -7,8 +7,8 @@ Description:				The app developed is a basic prototype for a home security syste
 					to the user. Additionally, user information (name, device names/IPs/etc)
 					are stored to identify and interface with the user and devices.
 					Using this app requires transmission of image data corresponding to
-					a 640*480 image, with RGB values stored as one byte each of the data
-					transmitted: (640*480) * 3bytes. The device has a simple protocol
+					a 640x480 image, with RGB values stored as one byte each of the data
+					transmitted: (640x480) x 3bytes. The device has a simple protocol
 					running as a daemon on the device with the following format:
 					
 ```
