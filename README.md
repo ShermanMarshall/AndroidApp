@@ -18,7 +18,10 @@ Description:				The app developed is a basic prototype for a home security syste
 									- init connects to a socket on port 27014, returning
 													device data in the 640x480x3 format explained above
 													
-					Lastly, explicit bindings for both the device's connections and the app's connections must be input to ensure they communicate properly. The app's bindings are located	within the ConnectionManager object, and the device's are within the bind method of the included code.
+					Lastly, explicit bindings for both the device's connections and the app's
+					connections must be input to ensure they communicate properly. The app's bindings
+					are located within the ConnectionManager object, and the device's are within the
+					bind method of the included code.
 					
 Third party libraries:		The prototype device uses OpenCV for image processing, and is included for completeness; however, any device conforming to the above protocol should be sufficient.
 	OpenCV website: http://opencv.org/
