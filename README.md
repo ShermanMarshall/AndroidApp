@@ -32,4 +32,4 @@ Bugs:
 	2.	pressing back to return to the AppMenu
 	3.	selecting a device from the AppMenu activity and starting the ShowVideo activity
 	
-The thread which maintained the initial connection remains active, and throws an exception despite the use of a mutex to wait while the thread is neither terminated or new.
+The thread which maintained the initial connection remains active, despite handling intended to eliminate the unnecessary resource utilization. I am currently revisiting this issue.
