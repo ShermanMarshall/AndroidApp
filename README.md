@@ -16,8 +16,8 @@ Description:				The app developed is a basic prototype for a home security syste
 ip 	- IP is the IPv4 address of the device.
 	 
 method	- Method is either test/init.
-	- test connects to a socket on port 27011, returning the phrase connection_established.
-	- init connects to a socket on port 27014, returning device data in the above 640x480x3 format.
+		- test connects to a socket on port 27011, returning the phrase connection_established.
+		- init connects to a socket on port 27014, returning device data in the above 640x480x3 format.
 ```
 													
 Lastly, explicit bindings for both the device's connections and the app's connections must be input to ensure they communicate properly. The app's bindings are located within the ConnectionManager object, and the device's are within the bind method of the included code.
@@ -25,12 +25,11 @@ Lastly, explicit bindings for both the device's connections and the app's connec
 Third party libraries:		The prototype device uses OpenCV for image processing, and is included for completeness; however, any device conforming to the above protocol should be sufficient.
 	OpenCV website: http://opencv.org/
 	
-Bugs:				a.	The thread started by the run method on the ConnectionManager object has
-					indeterminate behaviour, once the connection has ended. It is intended to end
-					following the exit of a loop corresponding with the life of the connection. The
-					bug can be replicated by:
-						1.	selecting a device from the AppMenu activity and starting the ShowVideo activity	
-						2.	pressing back to return to the AppMenu
-						3.	selecting a device from the AppMenu activity and starting the ShowVideo activity
-					The thread which maintained the initial connection remains active, and throws an exception
-					despite the use of a mutex to wait while the thread is neither terminated or new.
+Bugs:				
+	a.	The thread started by the run method on the ConnectionManager object has indeterminate behaviour, once the connection has ended. It is intended to end following the exit of a loop corresponding with the life of the connection. The bug can be replicated by:
+	
+	1.	selecting a device from the AppMenu activity and starting the ShowVideo activity	
+	2.	pressing back to return to the AppMenu
+	3.	selecting a device from the AppMenu activity and starting the ShowVideo activity
+	
+The thread which maintained the initial connection remains active, and throws an exception despite the use of a mutex to wait while the thread is neither terminated or new.
