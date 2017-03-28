@@ -32,10 +32,11 @@ public class BufferManager {
 
     public void dataReady() {
         containsData[idx[Constants.BMPIDX.n()]] = true;
-        if (idx[Constants.BMPIDX.n()] < Constants.BUFFERMAX.n() - 1)
+        if (idx[Constants.BMPIDX.n()] < Constants.BUFFERMAX.n() - 1) {
             idx[Constants.BMPIDX.n()]++;
-        else
+        } else {
             idx[Constants.BMPIDX.n()] = 0;  
+        }
     }
 
     public int[] getBitmap() {
@@ -45,8 +46,9 @@ public class BufferManager {
     public boolean hasNext() {
         if (containsData[idx[Constants.PARSEIDX.n()]]) {
             return true;
-        } else
+        } else {
             return false;    
+        }
     }
 
     public int[] getColors() {
