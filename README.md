@@ -26,7 +26,7 @@ Third party libraries:		The prototype device uses OpenCV for image processing, a
 	OpenCV website: http://opencv.org/
 	
 Bugs:				
-	a.	The thread started by the run method on the ConnectionManager object has indeterminate behaviour, once the connection has ended. It is intended to end following the exit of a loop corresponding with the life of the connection. The bug can be replicated by:
+	The thread started by the run method on the ConnectionManager object has indeterminate behaviour, once the connection has ended. It is intended to end following the exit of a loop corresponding with the life of the connection. The bug can be replicated by:
 	
 	1.	selecting a device from the AppMenu activity and starting the ShowVideo activity	
 	2.	pressing back to return to the AppMenu
