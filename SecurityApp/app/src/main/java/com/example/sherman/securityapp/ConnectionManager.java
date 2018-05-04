@@ -25,7 +25,7 @@ public class ConnectionManager extends Thread {
     Thread periodicIpChecker;
     int ipv4Bytes;
 
-    public ConnectionManager(WifiManager _wm) {
+    private ConnectionManager(WifiManager _wm) {
         wm = _wm;
         bufferManager = new BufferManager();
         verifyIP();
