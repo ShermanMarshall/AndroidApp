@@ -23,7 +23,7 @@ public class ConfigManager {
     static ConfigManager configManager;
     boolean isConnected = false;     //0: connected 1: timeout
 
-    private static ConfigManager newInstance(Context c) {
+    public static ConfigManager newInstance(Context c) {
         if (configManager != null)
             return configManager;
 
@@ -31,7 +31,7 @@ public class ConfigManager {
         return configManager;
     }
 
-    public ConfigManager(Context c) {
+    private ConfigManager(Context c) {
         //this.context = c;
         config = new Configuration(c);
     }
